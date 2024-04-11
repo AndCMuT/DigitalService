@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(196, 194, 194);
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    align-items: center;
+    line-height: 1.6;
+}
+body {
+    min-height: 100vh;
+    max-width: 1600px;
+    background-color: rgb(228, 250, 214);
+    margin: 100px;
+    margin-left: 200px;
+    border-radius: 3%;
+    box-shadow: 0 0.3em 1em black;
+    
+}
+.page_main {
+    padding: 20px;
+}
+.topheader {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.contact_block{
+
+}
+.social_block {
+    
+}
+.icon_social {
+    height: 50px;
+    width: 50px;
+}
+.icon_phone {
+    height: 24px;
+    width: 24px;
+}
+.nav_list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    display: inline;
+}
