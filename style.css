@@ -31,6 +31,17 @@ body {
     justify-content: space-between;
     padding: 20px;
 }
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#logo > p {
+    font-size: 24px;
+}
+#logo > p > br {
+    font-size: 8px;
+}
 .contact_block{
 
 }
