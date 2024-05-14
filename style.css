@@ -14,13 +14,14 @@ html {
     background-color: aliceblue;
 }
 body {
+    margin: 0 auto;
     min-height: 100vh;
     max-width: 1440px;
     
 }
 
 header{
-    margin: 0 200px;
+    margin: 0 auto;
     background-color: #FFF5E1;
 }
 .topheader {
@@ -70,4 +71,54 @@ header{
 }
 .nav_bar {
     display: inline;
+}
+
+.content_block {
+    max-width: 1440px;
+    height: 100%;
+} 
+
+.about {
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#list_photo > ul {
+    margin: 20px;
+}
+.photo_enginer {
+    max-width: 490px;
+    max-height: 360px;
+}
+
+.photo_enginer > img {
+    width: 100%;
+    height: 100%;
+}
+
+#container_advantages {
+    max-width: 550px; 
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.advan {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+
+.advan > img {
+    max-width: 90px;
+    max-height: 90px;
+    margin-right: 10px;
+}
+.advan > p {
+    padding-left: 10px;
+    font-size: 30px;
 }
