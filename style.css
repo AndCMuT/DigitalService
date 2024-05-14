@@ -84,6 +84,7 @@ header{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    background: linear-gradient(to bottom right, #FFF5E1, #62A9BF);
 }
 
 #list_photo > ul {
