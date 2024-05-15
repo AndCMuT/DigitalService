@@ -17,7 +17,6 @@ body {
     margin: 0 auto;
     min-height: 100vh;
     max-width: 1440px;
-    
 }
 
 header{
@@ -104,7 +103,6 @@ header{
     max-width: 550px; 
     display: flex;
     flex-direction: column;
-    
 }
 
 .advan {
@@ -122,4 +120,11 @@ header{
 .advan > p {
     padding-left: 10px;
     font-size: 30px;
+}
+.services {
+    display: flex;
+}
+.services_img_text > img {
+    max-width: 320px;
+    max-height: 320px;
 }
