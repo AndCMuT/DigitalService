@@ -22,6 +22,7 @@ body {
 /* header */
 header{
     margin: 0 auto;
+    padding: 0 2%;
     background-color: #FFF5E1;
 }
 .topheader {
@@ -92,7 +93,8 @@ header{
 /* first block */
 
 .about {
-    padding: 0 30px;
+    /* margin: 0 5%; */
+    padding: 5% 30px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -149,7 +151,7 @@ header{
 }
 
 .container_services {
-    margin: 20px 4%;
+    margin: 4% 4%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -186,6 +188,7 @@ header{
     justify-content: center;
 }
 .comment {
+    padding: 2%;
     margin: 1.5rem;
     max-width: 300px;
     min-height: 300px;
