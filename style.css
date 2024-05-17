@@ -17,8 +17,9 @@ body {
     margin: 0 auto;
     min-height: 100vh;
     max-width: 1440px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.4);
 }
-/* header logo */
+/* header */
 header{
     margin: 0 auto;
     background-color: #FFF5E1;
@@ -28,11 +29,16 @@ header{
     justify-content: space-between;
     padding: 10px 5px;
 }
+
+/* logo */
+
 #logo {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
+/* logo text */
 
 #logo > p {
     font-size: 16px;
@@ -41,10 +47,12 @@ header{
 #logo > p > b {
     font-size: 24px;
 }
+
+/* header contact social and phone*/
+
 .contact_block{
     display: flex;
     flex-direction: column;
-
 }
 
 .phone_number {
@@ -78,8 +86,11 @@ header{
 .content_block {
     max-width: 1440px;
     height: 100%;
-} 
+    padding: 2%;
+}
+
 /* first block */
+
 .about {
     padding: 0 30px;
     display: flex;
@@ -100,7 +111,11 @@ header{
 .photo_enginer > img {
     width: 100%;
     height: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
 }
+
+/* icon and text advantages */
 
 #container_advantages {
     max-width: 550px; 
@@ -120,29 +135,29 @@ header{
     max-height: 90px;
     margin-right: 10px;
 }
+
 .advan > p {
     padding-left: 10px;
     font-size: 30px;
 }
+
 .services {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(#62A9BF, #DFE5DA);
-    
+    background: linear-gradient(#62A9BF, #DFE5DA);    
 }
 
 .container_services {
-    margin: 0 9%;
+    margin: 20px 4%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .services_img_text {
-    margin: 0 1%;
-    
+    margin: 0 1%;    
 }
 
 .services_img_text > img {
@@ -177,4 +192,13 @@ header{
     background: #e1e1e1;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2% 5%;
+    background: #B1A6A6;
 }
