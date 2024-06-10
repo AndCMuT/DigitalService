@@ -82,7 +82,16 @@ header{
 }
 /* .nav_bar {
     display: inline;
-} */
+}
+.nav_link:visited,
+.nav_link:link {
+    text-decoration: none;
+    color: black;
+}
+.nav_link:hover {
+    color: #62A9BF;
+    text-decoration: dashed;
+}
 
 .content_block {
     max-width: 1440px;
@@ -170,18 +179,19 @@ header{
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
+
 .services_img_text > p {
     max-width: 320px;
     text-align: center;
 }
+
 .feedback {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
     align-items: center;
     background: #EBEBEB;
-
 }
+
 .container_feedback {
     display: flex;
     flex-direction: row;
