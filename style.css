@@ -80,7 +80,7 @@ header{
     display: flex;
     justify-content: space-around;
 }
-/* .nav_bar {
+.nav_bar {
     display: inline;
 }
 .nav_link:visited,
