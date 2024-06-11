@@ -5,19 +5,20 @@
 }
 
 html {
-    font-size: 24px;
+    /* font-size: 24px; */
     font-weight: 700;
     line-height: 1.6;
     background-color: aliceblue;
 }
 body {
+    font-size: 1.5rem;
     margin: 0 auto;
     min-height: 100vh;
     max-width: 1440px;
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.4);
 }
 /* header */
-header{
+header {
     margin: 0 auto;
     padding: 0 2%;
     background-color: #FFF5E1;
@@ -39,11 +40,11 @@ header{
 /* logo text */
 
 #logo > p {
-    font-size: 16px;
+    font-size: 1rem;
 
 }
 #logo > p > b {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 /* header contact social and phone*/
@@ -54,16 +55,33 @@ header{
 }
 
 .phone_number {
-    font-size: 30px;
+    margin: 0.25rem;
+    font-size: 1.75rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
+
+.phone_number > button {
+    padding-left: 0.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    border: none;
+    background: none;
+}
+
 .social_block {
     display: flex;
-    justify-content: end;
-    
+    justify-content: end;    
 }
 .icon_social {
     height: 48px;
     width: 48px;
+}
+
+.icon_social:hover {
+    transition: all .3 ease;
+    transform: scale(1.05);
 }
 .icon_phone {
     height: 30px;
@@ -101,7 +119,7 @@ header{
 
 .about {
     /* margin: 0 5%; */
-    padding: 2% 30px;
+    padding: 1rem 30px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -110,22 +128,81 @@ header{
 }
 
 .about > h1 {
-    margin: 2%;
+    margin: 2rem 0;
 }
 
+#list_photo {
+    overflow-wrap: break-word;
+    max-width: 700px;
+}
 #list_photo > ul {
-    margin: 20px;
+    margin: 1.75rem;
+    list-style: none;
+    padding-left: 2rem;
+}
+
+/* change icon list */
+
+#list_photo > ul li {
+    background-position: 0 0;
+    padding-left: 2.25rem;
+    background-size: 2rem 2rem;
+    background-repeat: no-repeat; 
+}
+#list_photo > ul li:nth-child(1) {
+    background-image: url(./img/free-icon-mobile-phone-545245.png);
+}
+#list_photo > ul li:nth-child(2) {
+    background-image: url(./img/free-icon-tablet-5495918.png);
+}
+#list_photo > ul li:nth-child(3) {
+    background-image: url(./img/free-icon-laptop-screen-4103454.png);
+}
+#list_photo > ul li:nth-child(4) {
+    background-image: url(./img/free-icon-pc-1527033.png);
 }
 .photo_enginer {
     max-width: 490px;
-    max-height: 360px;
+    height: 360px;
+    position: relative;
 }
 
 .photo_enginer > img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
+    opacity: 0;
+    /* animation: slide 3s ease infinite; */
+}
+.photo_enginer > img:nth-child(1) {
+    animation: slide 3s ease infinite;
+}
+.photo_enginer > img:nth-child(2) {
+    animation: slide 6s ease infinite;
+}
+.photo_enginer > img:nth-child(3) {
+    animation: slide 9s ease infinite;
+}
+.photo_enginer > img:nth-child(4) {
+    animation: slide 12s ease infinite;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 /* icon and text advantages */
@@ -137,6 +214,7 @@ header{
 }
 
 .advan {
+    margin: 1rem;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -144,11 +222,14 @@ header{
 }
 
 .advan > img {
-    max-width: 90px;
-    max-height: 90px;
+    max-width: 5.75rem;
+    max-height: 5.75rem;
     margin-right: 10px;
+    transition: all .7s ease;
 }
-
+.advan > img:hover {
+    transform: scale(1.1);
+}
 .advan > p {
     padding-left: 10px;
     font-size: 30px;
@@ -171,10 +252,11 @@ header{
 }
 
 .services_img_text {
-    margin: 0 1%;    
+    margin: 1rem;    
 }
 
 .services_img_text > img {
+    margin-bottom: 0.5rem;
     max-width: 320px;
     height: 320px;
     object-fit: cover;
