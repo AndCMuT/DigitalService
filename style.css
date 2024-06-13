@@ -80,7 +80,7 @@ header {
 }
 
 .icon_social:hover {
-    transition: all .3 ease;
+    /* transition: all .3 ease scale(1.05); */
     transform: scale(1.05);
 }
 .icon_phone {
