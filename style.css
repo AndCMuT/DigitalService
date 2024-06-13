@@ -2,13 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 html {
     /* font-size: 24px; */
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.6;
     background-color: aliceblue;
+    font-family: "Roboto", sans-serif;
 }
 body {
     font-size: 1.5rem;
@@ -41,7 +45,6 @@ header {
 
 #logo > p {
     font-size: 1rem;
-
 }
 #logo > p > b {
     font-size: 1.5rem;
@@ -63,24 +66,27 @@ header {
 }
 
 .phone_number > button {
-    padding-left: 0.5rem;
-    cursor: pointer;
-    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
     border: none;
     background: none;
+    padding-right: 2rem;
+    cursor: pointer;
 }
-
+.phone_number > button:hover,
+.phone_number > button:focus {
+    transform: rotate(30deg);
+}
 .social_block {
     display: flex;
     justify-content: end;    
 }
 .icon_social {
-    height: 48px;
-    width: 48px;
+    height: 2em;
+    width: 2em;
 }
 
 .icon_social:hover {
-    /* transition: all .3 ease scale(1.05); */
     transform: scale(1.05);
 }
 .icon_phone {
@@ -150,7 +156,7 @@ header {
 #list_photo > ul li {
     background-position: 0 0;
     padding-left: 2.25rem;
-    background-size: 2rem 2rem;
+    background-size: 1.5em 1.5em;
     background-repeat: no-repeat; 
 }
 #list_photo > ul li:nth-child(1) {
@@ -166,11 +172,11 @@ header {
     background-image: url(./img/free-icon-pc-1527033.png);
 }
 .photo_enginer {
-    max-width: 590px;
-    height: 360px;
+    max-width: 32em;
+    height: 18em;
     position: relative;
     background-image: url(./img/сервисинжинер\ 1блок.jpg);
-    animation: slide 10s ease infinite alternate;
+    animation: slide 10s ease-in infinite normal;
     background-size: cover;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.400);
     border-radius: 0.5rem;
@@ -224,7 +230,7 @@ header {
 
 .advan > img {
     max-width: 5.75rem;
-    max-height: 5.75rem;
+    height: 5.75rem;
     margin-right: 10px;
     transition: all .7s ease;
 }
@@ -232,8 +238,8 @@ header {
     transform: scale(1.1);
 }
 .advan > p {
-    padding-left: 10px;
-    font-size: 30px;
+    padding-left: .75rem;
+    font-size: 1.75rem;
 }
 /* block with services */
 
