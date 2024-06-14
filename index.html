@@ -58,31 +58,51 @@
         <section class="content_block services">
             <h2 id="smartphone">Смартфоны и планшеты</h2>
             <div class="container_services">
-                    <div class="services_img_text"><img src="./img/замена дисп.jpg" alt="change screen"><p><a href="#openModal">Замена дисплея</a></p></div>
-                    <div class="services_img_text"><img src="./img/разъём.jpg" alt="charge socket"><p>Замена разъёма питания</p></div>
-                    <div class="services_img_text"><img src="./img/утоплен.jpg" alt="get wet"><p>Восстановление после попадания влаги</p></div>
-                    <div class="services_img_text"><img src="./img/displayDefend.jpg" alt="defender screen"><p>Нанесение защитных покрытий</p></div>
-                    <div class="services_img_text"><img src="./img/unlockPhone.jpg" alt="unlock"><p>Разблокировка сброс пароля</p></div>
-                    <div class="services_img_text"><img src="./img/softPhone.jpeg" alt="soft for phone"><p>Установка и настройка ПО</p></div>
+                    <div class="services_img_text"><a href="#openModal"><img src="./img/замена дисп.jpg" alt="change screen" class="image_work"></a><p>Замена дисплея</a></p></div>
+                    <div class="services_img_text"><a href="#openModal"><img src="./img/разъём.jpg" alt="charge socket" class="image_work"></a><p>Замена разъёма питания</p></div>
+                    <div class="services_img_text"><a href="#openModal"><img src="./img/утоплен.jpg" alt="get wet" class="image_work"></a><p>Восстановление после попадания влаги</p></div>
+                    <div class="services_img_text"><a href="#openModal"><img src="./img/displayDefend.jpg" alt="defender screen" class="image_work"></a><p>Нанесение защитных покрытий</p></div>
+                    <div class="services_img_text"><a href="#openModal"><img src="./img/unlockPhone.jpg" alt="unlock" class="image_work"></a><p>Разблокировка сброс пароля</p></div>
+                    <div class="services_img_text"><a href="#openModal"><img src="./img/softPhone.jpeg" alt="soft for phone" class="image_work"></a><p>Установка и настройка ПО</p></div>
             </div>
             <h2 id="computer">Компьютеры и ноутбуки</h2>
             <div class="container_services">
-                    <div class="services_img_text"><img src="./img/чисткатеромасты.webp" alt="cleaning"><p>Чистка от пыли, замена термопасты</p></div>
-                    <div class="services_img_text"><img src="./img/ремонт.webp" alt="repair"><p>Ремонт и замена комплектующих</p></div>
-                    <div class="services_img_text"><img src="./img/матрица.jpg" alt="matrix notebook"><p>Замена матрицы ноутбука</p></div>
-                    <div class="services_img_text"><img src="./img/данные.jpg" alt="repair data"><p>Восстановление утерянных данных</p></div>
-                    <div class="services_img_text"><img src="./img/ос2.jpg" alt="reinstall OS"><p>Переустановка ОС</p></div>
-                    <div class="services_img_text"><img src="./img/ustanovka_program comp.jpg" alt="install soft"><p>Установка и настройка ПО и антивируса</p></div>
+                    <div class="services_img_text"><a href="#openModal"><img src="./img/чисткатеромасты.webp" alt="cleaning" class="image_work"></a><p>Чистка от пыли, замена термопасты</p></div>
+                    <div class="services_img_text"><a href="#openModal"><img src="./img/ремонт.webp" alt="repair" class="image_work"></a><p>Ремонт и замена комплектующих</p></div>
+                    <div class="services_img_text"><a href="#openModal"><img src="./img/матрица.jpg" alt="matrix notebook" class="image_work"></a><p>Замена матрицы ноутбука</p></div>
+                    <div class="services_img_text"><a href="#openModal"><img src="./img/данные.jpg" alt="repair data" class="image_work"></a><p>Восстановление утерянных данных</p></div>
+                    <div class="services_img_text"><a href="#openModal"><img src="./img/ос2.jpg" alt="reinstall OS" class="image_work"></a><p>Переустановка ОС</p></div>
+                    <div class="services_img_text"><a href="#openModal"><img src="./img/ustanovka_program comp.jpg" alt="install soft" class="image_work"></a><p>Установка и настройка ПО и антивируса</p></div>
             </div>
             <div id="openModal" class="modal">
                 <div class="modal_dialog">
                     <div class="modal_content">
                         <div class="modal_header">
-                            <h3 class="modal_title">Опишите поломку</h3>
+                            <h3 class="modal_title">Заполните форму и мы перезвоним</h3>
                             <a href="#close" title="Закрыть" class="close">x</a>
                         </div>
                         <div class="modal_body">
-                            <p>Здесь я буду организовывать форму</p>
+                            <form action="" method="get" class="form_question">
+                                <div class="form_input">
+                                    <label for="name" class="label_quest">Ваше имя:</label>
+                                    <input type="text" name="name" class="input_text">
+                                </div>
+                                <div class="form_input">
+                                    <label for="email" class="label_quest">Ваш email:</label>
+                                    <input type="email" name="email" class="input_text">
+                                </div>
+                                <div class="form_input">
+                                    <label for="tel" class="label_quest">Телефон:</label>
+                                    <input type="tel" name="telephone" class="input_text">
+                                </div>
+                                <div class="form_input">
+                                    <label for="model" class="label_quest">Модель:</label>
+                                    <input type="text" name="model" class="input_text">
+                                </div>
+                                <label for="message">Опишите проблему</label>
+                                <input type="text" name="message" class="input_text">
+                                <button type="submit" class="btn_sub">Отправить</button>
+                            </form>
                         </div>
                     </div>
                 </div>
