@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DigiService - Сервисный центр</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="">
 </head>
 <body>
     <header>
@@ -84,23 +84,24 @@
                         <div class="modal_body">
                             <form action="" method="get" class="form_question">
                                 <div class="form_input">
-                                    <label for="name" class="label_quest">Ваше имя:</label>
-                                    <input type="text" name="name" class="input_text">
+                                    <!-- <label for="name" class="label_quest">Ваше имя:</label> -->
+                                    <input type="text" name="name" class="input_text" placeholder="Имя">
                                 </div>
                                 <div class="form_input">
-                                    <label for="email" class="label_quest">Ваш email:</label>
-                                    <input type="email" name="email" class="input_text">
+                                    <!-- <label for="email" class="label_quest">Ваш email:</label> -->
+                                    <input type="email" name="email" class="input_text" placeholder="email">
                                 </div>
                                 <div class="form_input">
-                                    <label for="tel" class="label_quest">Телефон:</label>
-                                    <input type="tel" name="telephone" class="input_text">
+                                    <!-- <label for="tel" class="label_quest">Телефон:</label> -->
+                                    <input type="tel" name="telephone" class="input_text" placeholder="Номер телефона">
                                 </div>
                                 <div class="form_input">
-                                    <label for="model" class="label_quest">Модель:</label>
-                                    <input type="text" name="model" class="input_text">
+                                    <!-- <label for="model" class="label_quest">Модель:</label> -->
+                                    <input type="text" name="model" class="input_text" placeholder="Модель вашего устройства">
                                 </div>
-                                <label for="message">Опишите проблему</label>
-                                <input type="text" name="message" class="input_text">
+                                <!-- <label for="message">Опишите проблему</label>
+                                <input type="text" name="message" class="input_message"> -->
+                                <textarea placeholder="Сообщение" class="input_message"></textarea>
                                 <button type="submit" class="btn_sub">Отправить</button>
                             </form>
                         </div>

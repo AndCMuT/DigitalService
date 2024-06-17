@@ -306,13 +306,15 @@ header {
     position: relative;
     width: auto;
     margin: 10px;
+    max-width: 500px;
+    margin: 5em auto;
 }
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
     .modal_dialog {
-        max-width: 500px;
+        max-width: 450px;
         margin: 30px auto;
     }
-}
+} */
 .modal_content {
     position: relative;
     display: -webkit-box;
@@ -324,6 +326,7 @@ header {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    align-items: center;
     background-color: #fff;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
@@ -377,7 +380,7 @@ header {
 
 .modal_body {
     position: relative;
-    flex: 1 1 auto;
+    /* flex: 1 1 auto; */
     padding: .75em;
     overflow: auto;
 }
@@ -392,7 +395,7 @@ header {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 1em;
+    margin: 0.5em;
 }
 .label_quest {
     padding-right: 1em;
@@ -400,9 +403,32 @@ header {
 .input_text {
     width: 20em;
     height: 2.5em;
-    border: .2em solid rgba(0, 0, 0, 0.7);
+    padding: .5em;
+    border: .1em solid rgba(0, 0, 0, 0.7);
     border-radius: .5em;
+    font-size: 1em;
 }
+.input_message {
+    width: auto;
+    height: 10em;
+    resize: none;
+    border: .1em solid rgba(0, 0, 0, 0.7);
+    border-radius: .5em;
+    font-size: 1em;
+    padding: .5em;
+}
+
+.btn_sub {
+    font-size: 1em;
+    width: 10em;
+    height: 3em;
+    margin: 1em auto;
+    border: none;
+    border-radius: .5em;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+    background: rgba(92, 204, 27, 0.788);
+}
+
 
 /* feedback block */
 
