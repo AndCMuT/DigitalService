@@ -359,9 +359,9 @@ header {
 }
 .close {
     float: right;
-    /* font-family: sans-serif; */
+    font-family: sans-serif;
     font-size: 1.1em;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1;
     color: #000;
     text-shadow: 0 1px 0 #111111;
@@ -373,7 +373,7 @@ header {
 
 .close:focus, .close:hover{
     color: #000;
-    /* text-decoration: none; */
+    text-decoration: none;
     cursor: pointer;
     opacity: .75;
 }
@@ -387,20 +387,11 @@ header {
 
 .form_question {
     display: flex;
-    flex-flow: column;    
+    flex-direction: column;    
 }
 
-.form_input {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0.5em;
-}
-.label_quest {
-    padding-right: 1em;
-}
 .input_text {
+    margin: 0.5em;
     width: 20em;
     height: 2.5em;
     padding: .5em;
@@ -425,10 +416,29 @@ header {
     margin: 1em auto;
     border: none;
     border-radius: .5em;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
     background: rgba(92, 204, 27, 0.788);
+    cursor: pointer;
 }
-
+.btn_sub:hover, .btn_sub:focus {
+    background-color: rgba(81, 179, 24, 0.9);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+.btn_sub:active {
+    background-color: rgba(122, 236, 56, 0.9);
+    box-shadow: none;
+}
+.info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+.info:hover, .info:focus {
+    opacity: 1;
+    color: #fff;
+}
 
 /* feedback block */
 
