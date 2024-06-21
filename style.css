@@ -533,10 +533,23 @@ footer {
 }
 .upper_btn {
     border-radius: 50%;
-    background-image: url(./img/upload.png);
     width: 3rem;
     height: 3rem;
+    cursor: pointer;
     position: fixed;
     top: 900px;
     left: 1rem;
+    display: none;
+}
+.upper_btn > img {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    opacity: .3;
+}
+.upper_btn > img:hover {
+    opacity: 1;
+}
+.upper_btn_show {
+    display: block;
 }

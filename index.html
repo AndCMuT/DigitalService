@@ -288,6 +288,35 @@
             <p>г. Центральный ул. им. Вождя пролетариата д. 1 к. 1</p>
         </div>
     </footer>
-    <div class="upper_btn"> </div>
+    <div class="upper_btn"><img src="./img/upload.png" alt="up"></div>
+    <script>
+     
+        const goTopBtn = document.querySelector(".upper_btn");
+
+        window.addEventListener("scroll", trackScroll);
+
+        goTopBtn.addEventListener("click", goTop);
+
+        function trackScroll() {
+
+            const scrolled = window.pageYOffset;
+
+            const coords = document.documentElement.clientHeight;
+
+            if (scrolled > coords) {
+                goTopBtn.classList.add("upper_btn_show");
+            } else {
+                goTopBtn.classList.remove("upper_btn_show");
+            }
+
+        }
+
+        function goTop() {
+            if (window.pageYOffset > 0) {
+                window.scrollBy(0, -75);
+                setTimeout(goTop, 0);
+            }
+        }
+    </script>
 </body>
 </html>
