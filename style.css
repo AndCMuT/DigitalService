@@ -528,8 +528,8 @@ footer {
     height: 3rem;
     cursor: pointer;
     position: fixed;
-    top: 900px;
-    left: 1rem;
+    top: 90%;
+    left: 2%;
     display: none;
 }
 .upper_btn > img {
